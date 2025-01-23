@@ -1,7 +1,7 @@
 import { ImageBackground, StyleSheet, View, Text } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import CustomButton from '../components/customButton'
-import { vh, vw } from '../utils/scaling'
+
 import CustomHeader from '../components/customHeader';
 import CustomInput from '../components/global/customTextInput';
 import { Icons, Images } from '../assets';
@@ -92,8 +92,8 @@ const Login = () => {
                     <CustomButton
                         text="Start Shift"
                         style={{
-                            marginVertical: vh(40),
-                            marginHorizontal: vw(30),
+                            marginVertical: 40,
+                            marginHorizontal: 30,
                             opacity: disable ? 0.8 : 1,
                         }}
                         onPress={handleLogin}
@@ -113,7 +113,7 @@ export default Login;
 const styles = StyleSheet.create({
     body: {
         resizeMode: "cover",
-        height: vh(1050),
+        height: 1050,
     },
     overlay: {
         flex: 1,
@@ -121,8 +121,8 @@ const styles = StyleSheet.create({
     },
     textContainer: {
         paddingTop: 20,
-        marginHorizontal: vw(30),
-        marginBottom: vh(30),
+        marginHorizontal: 30,
+        marginBottom: 30,
     },
     text1: {
         fontFamily: 'Montserrat-Bold',
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
         color: 'white',
     },
     button: {
-        marginVertical: vh(40),
-        marginHorizontal: vw(30),
+        marginVertical: 40,
+        marginHorizontal: 30,
     },
 });

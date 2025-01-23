@@ -2,7 +2,7 @@ import { Image, ImageBackground, StyleSheet,Text ,View } from 'react-native'
 import React from 'react'
 
 import { Icons, Images } from '../assets'
-import { SCREEN_WIDTH,vh ,vw} from '../utils/scaling'
+import { SCREEN_WIDTH} from '../utils/scaling'
 
 
 const CustomHeader:React.FC = () => {
@@ -22,13 +22,13 @@ export default CustomHeader
 const styles = StyleSheet.create({
     head:{
         width:SCREEN_WIDTH,
-        height:vh(397),
+        height:397,
         justifyContent:'flex-end',
-        padding:vw(30),
+        padding:30,
     },
     logo:{
-        width:vw(240),
-        height:vh(83),
+        width:240,
+        height:83,
         resizeMode:'contain'
     },
     text1:{

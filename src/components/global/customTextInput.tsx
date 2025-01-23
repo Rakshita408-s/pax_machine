@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, StyleSheet,Image} from 'react-native';
 import { TextInput,  } from 'react-native-paper';
-import { vh, vw } from '../../utils/scaling';
+
 
 
 interface CustomInputProps {
@@ -95,12 +95,12 @@ const CustomInput: React.FC<CustomInputProps> = ({
 
 const styles = StyleSheet.create({
   inputContainer: {
-    marginVertical: vh(25),
+    marginVertical: 25,
     backgroundColor: '#01171F',
    
     flexDirection: 'row',
     alignItems: 'center',
-    marginHorizontal: vw(30),
+    marginHorizontal: 30,
     
   },
   input: {
@@ -115,8 +115,8 @@ const styles = StyleSheet.create({
 
   },
   iconStyle:{
-    width:vw(25),
-    height:vh(25),
+    width:25,
+    height:25,
     resizeMode:'contain',
   
   }
